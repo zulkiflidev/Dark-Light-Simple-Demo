@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* 
+  Dalam Tailwind v4, kita hanya perlu mengimpor "tailwindcss".
+  Untuk mendukung transisi yang halus saat berganti tema, 
+  kita bisa menambahkan sedikit CSS global di sini.
+*/
+
+body {
+  @apply transition-colors duration-300;
+}
