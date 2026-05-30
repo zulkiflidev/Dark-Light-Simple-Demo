@@ -1,7 +1,13 @@
 @import "tailwindcss";
 
 /* 
-  Dalam Tailwind v4, kita hanya perlu mengimpor "tailwindcss".
+  Dalam Tailwind v4, dark mode defaultnya menggunakan media query.
+  Untuk mendukung toggle manual menggunakan class ".dark", kita harus 
+  mendefinisikan ulang variant "dark".
+*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 
   Untuk mendukung transisi yang halus saat berganti tema, 
   kita bisa menambahkan sedikit CSS global di sini.
 */
